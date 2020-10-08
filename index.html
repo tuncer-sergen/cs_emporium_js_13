@@ -4,8 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-    
+    <header>
+        <div class="d-flex flex-row justify-content-center my-5">
+            <h1>emporium</h1>
+            <div class="d-flex align-items-end">
+                <p id="pointCarre"></p>
+            </div>
+        </div>
+        <button id="collapse"><i class="far fa-caret-square-down fa-2x"></i></button>
+        <nav class="container d-flex justify-content-center mb-4">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#">PRODUCT</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#">ELEMENT</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <button class="clairSombre bg-white"></button>
+                    <button class="clairSombre bg-dark"></button>
+                    <button class="bg-secondary border-0 text-white salut1">connexion</button>
+                </li>
+              </ul>
+        </nav>
+        <div class="modal1">
+            <div id="connexion">
+                <form class="salut2">
+                    <label for="identifiant">e-mail ou identifiant</label>
+                    <input type="text" id="identifiant" name="identifiant">
+                    <label for="mdp">mot de passe</label>
+                    <input type="text" id="mdp" name="mdp">
+                    <p>tourjous pas inscrit? <span class="text-danger inscrire">S'inscrire</span></p>
+                    <button class="bg-dark border-0 rounded-pill text-white py-2 px-4 annule">annulé</button>
+                </form>
+            </div>
+            <div id="inscription">
+                <form class="salut2">
+                    <label for="e-mail">e-mail</label>
+                    <input type="text" id="e-mail" name="e-mail">
+                    <label for="identifiant1">créer un identifiant</label>
+                    <input type="text" id="identifiant1" name="identifiant1">
+                    <label for="mdp">mot de passe</label>
+                    <input type="text" id="mdp" name="mdp">
+                    <label for="mdprepeat">répéter mot de passe</label>
+                    <input type="text" id="mdprepeat" class="mb-3" name="mdprepeat">
+                    <button class="bg-danger border-0 rounded-pill px-4 py-2 mb-3 text-white" disabled="disabled">Valider</button>
+                    <p>déja un compte?<span class="text-danger connecter">connexion</span></p>
+                    <button class="bg-dark border-0 rounded-pill text-white py-2 px-4 annule">annulé</button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+    <section id="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class=" col-7 my-5 py-3 imgLogoSlider">
+                    <h1 class="text-danger">Shop at</h1>
+                    <img src="./public/img/logo.png" alt="">
+                    <p class="text-muted">A wonderful serenity has taken possession of my my entire soul, like these sweet mornings of spring which i enjoy with my.</p>
+                    <a href="#imgProduit"><button class="rounded-pill border-0 py-3 px-5 bg-danger text-white" style="font-size: 12px;">SALE ITEMS</button></a>
+                </div>
+                <div class="col-5 imgslider">
+                    <img src="./public/img/slider-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cards mb-5">
+        <div class="row mt-5">
+            <div class="col-4 imgcards1 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="text-white">Living Room</h1>
+                    <hr class="hrtest">
+            </div>
+            <div class="col-4 imgcards2 d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-white">Sale Items</h1>
+                <hr class="hrtest">
+            </div>
+            <div class="col-4 imgcards3 d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-white">Clothes</h1>
+                <hr class="hrtest">
+            </div>
+        </div>
+    </section>
+    <section id="imgProduit">
+        <div class="container my-5 py-5 text-center imgAgrandit">
+            <h3 class="my-5">Recents Products</h3>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="testimg" alt="">
+                    <p class="mt-4">Luxury Sofa</p>
+                    <p class="text-danger mb-4">$600.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="d-flex align-items-center justify-content-center my-4">
+                        <div class="mr-5"> 
+                            <button class="rounded-circle py-3 px-2 bg-danger border-0 text-white">SALE!</button>
+                        </div>
+                        <div>
+                            <p>Leather Gloves</p>
+                            <p class="text-danger"><strike class="text-secondary">$34.00</strike> $27.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="">
+                    <p class="mt-4">Colorful Bowl</p>
+                    <p class="text-danger mb-4">$18.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-bag.jpg" alt="">
+                    <div class="d-flex align-items-center justify-content-center my-4">
+                        <div class="mr-5"> 
+                            <button class="rounded-circle py-3 px-2 bg-danger border-0 text-white">SALE!</button>
+                        </div>
+                        <div>
+                            <p>Women Bag</p>
+                            <p class="text-danger"><strike class="text-secondary">$420.00</strike> $350.00</p>        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <p class="mt-4">Minimal T-Shirt</p>
+                    <p class="text-danger mb-4">$15.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <p class="mt-4">Plates Set</p>
+                    <p class="text-danger mb-4">$30.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <p class="mt-4">Modern Sofa</p>
+                    <p class="text-danger mb-4">$900.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <p class="mt-4">Bed Linen</p>
+                    <p class="text-danger mb-4">$79.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <p class="mt-4">Minimal Shoes</p>
+                    <p class="text-danger mb-4">$60.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<script src="./src/js/main.js"></script>
+<!-- jquery -->
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<!-- bootstrap -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 </body>
 </html>
